@@ -1,0 +1,35 @@
+nav {
+  position: absolute;
+  top: 1rem;
+  justify-content: flex-start;
+  z-index: 2;
+  background-color: transparent;
+  position: fixed;
+  /* background-color: rgba(0, 0, 0, 0.6);  */
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end; 
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #7d817edc;
+}
+

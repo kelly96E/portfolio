@@ -1,0 +1,34 @@
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.fat{
+  font-size: 1.5rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+

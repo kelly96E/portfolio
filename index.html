@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./stylesheet/form.css" />
     <link rel="stylesheet" href="./stylesheet/nav.css" />
     <link rel="stylesheet" href="./stylesheet/footer.css" />
+
+    <!-- <script src="js/video.js" defer></script> -->
   </head>
   <body>
     <video autoplay muted loop id="video-background">
-      <source src="video/background-video.webm" type="video/webm" />
+      <source src="video/bg-video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
@@ -24,33 +26,38 @@
           <a
             href="https://www.linkedin.com/in/kelly-gashi-783189249/"
             target="_blank"
-            ><img
+          >
+            <img
               src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png"
               alt="LinkedIn"
               width="55"
               height="55"
-          /></a>
+            />
+          </a>
         </li>
         <li>
-          <a href="https://github.com/kelly96E" target="_blank"
-            ><img
-              src="https://cdn.iconscout.com/icon/free/png-512/github-153-675523.png"
-              alt="GitHub"
+          <a href="https://github.com/kelly96E" target="_blank">
+            <i
+              class="fa-brands fa-github"
+              style="color: #ffffff"
               width="55"
               height="55"
-          /></a>
+            ></i>
+          </a>
         </li>
         <li>
-          <a href="./your-resume.pdf" download
-            ><img
+          <a href="./your-resume.pdf" download>
+            <img
               src="https://cdn-icons-png.flaticon.com/512/372/372236.png"
               alt="Download CV"
               width="55"
               height="55"
-          /></a>
+            />
+          </a>
         </li>
       </ul>
     </nav>
+
     <header>
       <div class="header-content">
         <h1>Welcome to My Portfolio</h1>
@@ -73,15 +80,15 @@
       <section id="skills">
         <h2>My Skills</h2>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Java</li>
-          <li>MySQL</li>
-          <li>Spring Boot</li>
-          <li>Swing</li>
-          <li>Firebase</li>
+          <li class="fat">HTML</li>
+          <li class="fat">CSS</li>
+          <li class="fat">JavaScript</li>
+          <li class="fat">React</li>
+          <li class="fat">Java</li>
+          <li class="fat">MySQL</li>
+          <li class="fat">Spring Boot</li>
+          <li class="fat">Swing</li>
+          <li class="fat">Firebase</li>
         </ul>
       </section>
       <section id="projects">
@@ -169,7 +176,6 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
       <p>&copy; 2023 My Portfolio</p>
     </footer>

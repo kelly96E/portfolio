@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer li {
+  margin-left: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
