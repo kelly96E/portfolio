@@ -1,5 +1,5 @@
 main section {
-  padding: 4rem 0;
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -20,22 +20,33 @@ main ul {
   list-style: none;
 }
 
+/* Add this to your main.css */
+#projects {
+  margin-bottom: 18rem; /* Adjust the value according to your needs */
+}
+
+
 main li {
   margin: 0 1rem;
+  width: 300px; /* Add fixed width */
+  height: 200px; /* Add fixed height */
+  position: relative; /* Add this to properly position the h3 element */
 }
+
+main img {
+  width: 100%; /* Set width to 100% of the container */
+  height: 100%; /* Set height to 100% of the container */
+  object-fit: cover; /* Make the image cover the container without stretching */
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+}
+
 
 main a {
   display: block;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-}
-
-main img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  transition: all 0.3s ease-in-out;
 }
 
 main h3 {

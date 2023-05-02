@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="./stylesheet/form.css" />
     <link rel="stylesheet" href="./stylesheet/nav.css" />
     <link rel="stylesheet" href="./stylesheet/footer.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <script src="js/formMessage.js" defer></script>
     <!-- <script src="js/video.js" defer></script> -->
   </head>
   <body>
@@ -38,21 +42,17 @@
         <li>
           <a href="https://github.com/kelly96E" target="_blank">
             <i
-              class="fa-brands fa-github"
-              style="color: #ffffff"
-              width="55"
-              height="55"
+              class="fab fa-github"
+              style="color: #ffffff; font-size: 55px"
             ></i>
           </a>
         </li>
         <li>
           <a href="./your-resume.pdf" download>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/372/372236.png"
-              alt="Download CV"
-              width="55"
-              height="55"
-            />
+            <i
+              class="fa-solid fa-file"
+              style="color: #ffffff; font-size: 55px"
+            ></i>
           </a>
         </li>
       </ul>
@@ -95,72 +95,75 @@
         <h2>My Projects</h2>
         <ul>
           <li>
-            <a href="#">
-              <img src="https://via.placeholder.com/400x200" alt="Project 1" />
-              <h3>Project 1</h3>
+            <a
+              href="https://github.com/kelly96E/JAVA22-java1-slutprojekt-shkelqim-gashi"
+              target="_blank"
+            >
+              <img src="/images/Calendar.png" alt="Project Calendar" />
+              <h3>Project Calendar</h3>
             </a>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-              nisi vel lacus commodo sollicitudin. Ut faucibus, urna id eleifend
-              congue, lorem erat placerat nulla, id sagittis velit nibh id
-              metus.
+              This is my final project for a Java course, where I developed a
+              weekly calendar application using Java and the Swing framework.
             </p>
           </li>
           <li>
-            <a href="#">
-              <img src="https://via.placeholder.com/400x200" alt="Project 2" />
-              <h3>Project 2</h3>
+            <a
+              href="https://kelly96e.github.io/java22-js-slutprojekt-shkelqim-gashi/"
+            >
+              <img src="images/flickr.png" alt="Project Flickr" />
+              <h3>Project Flickr</h3>
             </a>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-              nisi vel lacus commodo sollicitudin. Ut faucibus, urna id eleifend
-              congue, lorem erat placerat nulla, id sagittis velit nibh id
-              metus.
+              I created a Flickr photo search web app for my final project in
+              JavaScript course, showcasing my skills in dynamic user interface
+              design and using APIs
+            </p>
+          </li>
+
+          <li>
+            <a
+              href="https://kelly96e.github.io/java22-avjs-slutprojekt-shkelqim-gashi/"
+            >
+              <img src="images/Webshop.png" alt="Project Webshop" />
+              <h3>Project Webshop</h3>
+            </a>
+            <p>
+              This is my final project for an advanced JS course, where I
+              created a webshop using React and Firebase. The project
+              demonstrates my skills in using these technologies to develop an
+              online store, including features such as product listings,
+              shopping cart, and checkout
             </p>
           </li>
 
           <li>
             <a href="#">
-              <img src="https://via.placeholder.com/400x200" alt="Project 1" />
-              <h3>Project 1</h3>
+              <img src="images/cook-book.png" alt="cook-book" />
+              <h3>Project cook-book</h3>
             </a>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-              nisi vel lacus commodo sollicitudin. Ut faucibus, urna id eleifend
-              congue, lorem erat placerat nulla, id sagittis velit nibh id
-              metus.
-            </p>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="https://via.placeholder.com/400x200" alt="Project 1" />
-              <h3>Project 1</h3>
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-              nisi vel lacus commodo sollicitudin. Ut faucibus, urna id eleifend
-              congue, lorem erat placerat nulla, id sagittis velit nibh id
-              metus.
+              This is a recipe book web application developed using the Spring
+              framework and MySQL, together with a team of 4 people. Soon ready
+              to be launched..
             </p>
           </li>
           <li>
             <a href="#">
               <img src="https://via.placeholder.com/400x200" alt="Project 1" />
-              <h3>Project 1</h3>
+              <h3>Project soon...</h3>
             </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
-              nisi vel lacus commodo sollicitudin. Ut faucibus, urna id eleifend
-              congue, lorem erat placerat nulla, id sagittis velit nibh id
-              metus.
-            </p>
+            <p>Coming soon...</p>
           </li>
         </ul>
       </section>
       <section id="contact">
         <h2>Get In Touch</h2>
-        <form action="#" method="post">
+        <form
+          action="https://formspree.io/f/myyaojkk"
+          method="post"
+          id="contact-form"
+        >
           <label for="name">Name</label>
           <input type="text" id="name" name="name" />
           <label for="email">Email</label>
@@ -169,6 +172,7 @@
           <textarea id="message" name="message"></textarea>
           <button type="submit" class="btn">Send Message</button>
         </form>
+        <div id="form-message" style="display: none"></div>
       </section>
     </main>
     <footer>
@@ -177,7 +181,7 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
       </ul>
-      <p>&copy; 2023 My Portfolio</p>
+      <p>&copy; 2023 Kelly</p>
     </footer>
   </body>
 </html>
