@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: contain;
+}
+
+
+video {
+  max-width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+  }
+
+  main section {
+    padding: 2rem 0;
+  }
+
+  main ul {
+    flex-direction: column;
+  }
+
+  main li {
+    margin: 1rem 0;
+  }
+}
