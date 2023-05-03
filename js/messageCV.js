@@ -1,5 +1,4 @@
 function showCvMessage() {
-  console.log("CV button clicked");
   const formMessage = document.getElementById("form-message");
 
   formMessage.textContent =
@@ -15,7 +14,6 @@ function showCvMessage() {
   formMessage.style.fontWeight = "bold";
   formMessage.style.textAlign = "center";
   formMessage.classList.add("message-shadow");
-
 
   // Scroll down to the formMessage smoothly
   formMessage.scrollIntoView({ behavior: "smooth" });
