@@ -68,8 +68,8 @@ main a:hover h3 {
   border-radius: 5px;
   display: inline-block;
   padding: 1rem 2rem;
-  border: 2px solid #a2a5a2;
-  color: #a2a5a2;
+  border: 2px solid #ffe6e6;
+  color: #ffe6e6;
   text-transform: uppercase;
   font-weight: bold;
   transition: all 0.4s ease-in-out;
