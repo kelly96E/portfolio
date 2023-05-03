@@ -25,7 +25,6 @@ main ul {
   margin-bottom: 18rem; /* Adjust the value according to your needs */
 }
 
-
 main li {
   margin: 0 1rem;
   width: 300px; /* Add fixed width */
@@ -40,7 +39,6 @@ main img {
   vertical-align: middle;
   transition: all 0.3s ease-in-out;
 }
-
 
 main a {
   display: block;
@@ -83,5 +81,3 @@ main a:hover h3 {
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
   color: #fff;
 }
-
-
