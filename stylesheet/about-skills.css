@@ -1,0 +1,38 @@
+#about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#about-skills .about-skills-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#about-skills #about,
+#about-skills #skills {
+  flex: 1;
+  padding: 1rem;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+#about-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#about-skills li {
+  margin: 0.5rem;
+}
