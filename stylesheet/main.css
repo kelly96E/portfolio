@@ -1,7 +1,6 @@
 main section {
   padding: 3rem 0;
   text-align: center;
-  min-height: 100vh; /* Change height to min-height */
 }
 
 main h2 {
@@ -21,6 +20,10 @@ main ul {
   list-style: none;
 }
 
+/* Add this to your main.css */
+#projects {
+  margin-bottom: 18rem; /* Adjust the value according to your needs */
+}
 
 main li {
   margin: 0 1rem;
