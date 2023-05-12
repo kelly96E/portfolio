@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../stylesheet/body.css" />
+    <link rel="stylesheet" href="../stylesheet/nav.css" />
+    <link rel="stylesheet" href="../stylesheet/footer.css" />
+    <link rel="stylesheet" href="../stylesheet/projects.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <script src="../js/hamburger-menu.js" defer></script>
+  </head>
+  <body>
+    <video autoplay muted loop id="video-background">
+      <source src="../video/ink-4.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/kelly-gashi-783189249/"
+            target="_blank"
+          >
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square2-512.png"
+              alt="LinkedIn"
+              width="55"
+              height="55"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/kelly96E" target="_blank">
+            <i
+              class="fab fa-github"
+              style="color: #ffffff; font-size: 55px"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a id="cv-button">
+            <i
+              class="fa-solid fa-file"
+              style="color: #ffffff; font-size: 55px"
+            ></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="hamburger-menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times" style="display: none"></i>
+        <div class="menu" style="display: none">
+          <ul>
+            <li class="hamburger-menu-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="hamburger-menu-item">
+              <a href="#">Projects</a>
+            </li>
+            <li class="hamburger-menu-item">
+              <a href="/html/about-me.html">About me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="projects">
+      <ul>
+        <li class="project">
+            <a href="#">
+              <img src="../images/cook-book.png" alt="Project cook-book" />
+              <div class="project-description">
+                <h3>Project Cookbook</h3>
+                <p>
+                  This is a recipe book web application developed using the Spring
+                  framework, JS and MySQL, together with a team of 4 people. Soon
+                  ready to be launched..
+                </p>
+              </div>
+            </a>
+          </li>
+        <li class="project">
+          <a
+            href="https://kelly96e.github.io/java22-avjs-slutprojekt-shkelqim-gashi/"
+            target="_blank"
+          >
+            <img src="../images/Webshop.png" alt="Project Webshop" />
+            <div class="project-description">
+              <h3>Project Webshop</h3>
+              <p>
+                This is my final project for an advanced JS course, where I
+                created a webshop using React and Firebase.
+              </p>
+            </div>
+          </a>
+        </li>
+     
+        <li class="project">
+          <a
+            href="https://github.com/kelly96E/JAVA22-java1-slutprojekt-shkelqim-gashi"
+            target="_blank"
+          >
+            <img src="../images/Calendar.png" alt="Project Calendar" />
+            <div class="project-description">
+              <h3>Project Calendar</h3>
+              <p>
+                This is my final project for a Java course, where I developed a
+                weekly calendar application using Java and the Swing framework.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a
+            href="https://kelly96e.github.io/java22-js-slutprojekt-shkelqim-gashi/"
+            target="_blank"
+          >
+            <img src="../images/flickr.png" alt="Project Flickr" />
+            <div class="project-description">
+              <h3>Project Flickr</h3>
+              <p>
+                I created a Flickr photo search web app for my final project in
+                JavaScript course, showcasing my skills in dynamic user
+                interface design and using APIs.
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="project">
+          <a href="#">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="Coming Soon Project"
+            />
+            <div class="project-description">
+              <h3>Project</h3>
+              <p>Coming soon...</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="Coming Soon Project"
+            />
+            <div class="project-description">
+              <h3>Project</h3>
+              <p>Coming soon...</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Kelly</p>
+    </footer>
+  </body>
 </html>
