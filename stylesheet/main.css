@@ -20,10 +20,6 @@ main ul {
   list-style: none;
 }
 
-/* Add this to your main.css */
-#projects {
-  margin-bottom: 18rem; /* Adjust the value according to your needs */
-}
 
 main li {
   margin: 0 1rem;

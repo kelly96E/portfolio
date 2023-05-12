@@ -1,10 +1,13 @@
 nav {
   top: 1rem;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 2;
   background-color: transparent;
   position: fixed;
-  /* background-color: rgba(0, 0, 0, 0.6);  */
+  width: 100%;
+  flex-direction: row;
 }
 
 .message-shadow {
@@ -12,9 +15,13 @@ nav {
   box-shadow: 0 0 15px 0 rgba(77, 182, 172, 0.5) !important;
 }
 
-
 #cv-button:hover {
   cursor: pointer;
+}
+
+.nav-header-wrapper {
+  z-index: 9999;
+  position: relative;
 }
 
 .message-shadow {
@@ -45,4 +52,87 @@ nav a {
 
 nav a:hover {
   color: #7d817edc;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 55px;
+  color: #ffffff;
+  margin-right: 1.4rem;
+  margin-left: auto; /* This will push your hamburger menu to the right */
+}
+
+.hamburger-menu i {
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu i:hover {
+  color: #7d817edc;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  right: 20px;
+}
+
+.hamburger-menu-item {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.menu li {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: text-shadow 0.4s ease-in-out;
+}
+
+.menu a:hover {
+  text-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between; /* space out the logos and hamburger menu */
+  }
+
+  .hamburger-menu {
+    display: block; /* show the hamburger menu */
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%; /* make the menu full width */
+  }
+
+  .menu ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

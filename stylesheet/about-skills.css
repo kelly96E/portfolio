@@ -1,10 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 #about-skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 3rem 0;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  height: 60vh; /* adjust this to fit your content */
+  margin: 0 auto;
 }
 
 #about-skills .about-skills-content {
@@ -23,6 +41,43 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  #about-skills {
+    width: 100%;
+    height: auto; /* let it adjust based on the content */
+    padding: 1rem;
+  }
+
+  #about-skills .about-skills-content {
+    flex-direction: column;
+  }
+
+  #about-skills #about,
+  #about-skills #skills {
+    max-width: 100%;
+  }
+
+  .main-content {
+    margin-top: 10rem; /* adjust as necessary */
+  }
+
+  footer {
+    position: static; /* to push the footer to the bottom when the content above it is stacked vertically */
+  }
+}
+
+#about-skills h2 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#about-skills p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
 #about-skills ul {
   display: flex;
   flex-wrap: wrap;
@@ -35,4 +90,19 @@
 
 #about-skills li {
   margin: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
 }

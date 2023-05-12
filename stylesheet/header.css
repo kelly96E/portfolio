@@ -31,4 +31,11 @@ header p {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 768px) {
+  .header-content {
+    top: 60%;  /* or any percentage or px value you find suitable */
+  }
+}
+
+
 

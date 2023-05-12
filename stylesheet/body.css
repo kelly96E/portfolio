@@ -19,6 +19,8 @@ body {
   scroll-behavior: smooth;
 }
 
+
+
 #video-background {
   position: fixed;
   top: 0;
@@ -34,7 +36,6 @@ body {
 #video-background {
   object-position: center center;
 }
-
 
 @media screen and (max-width: 768px) {
   nav {
@@ -58,4 +59,3 @@ body {
     margin: 1rem 0;
   }
 }
-
