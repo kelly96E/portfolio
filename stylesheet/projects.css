@@ -44,10 +44,6 @@ body {
   height: auto;
 }
 
-/* .project-description {
-  opacity: 0.8;
-} */
-
 #projects h3 {
   margin: 0;
   padding: 1em;
@@ -67,4 +63,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 10px;
+}
+
+/* Add this media query */
+@media (max-width: 600px) {
+  #projects {
+    grid-template-columns: 1fr;
+  }
 }
