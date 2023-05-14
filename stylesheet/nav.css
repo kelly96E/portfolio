@@ -1,13 +1,16 @@
 nav {
   top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 2;
   background-color: transparent;
   position: fixed;
   width: 100%;
   flex-direction: row;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .message-shadow {
@@ -17,11 +20,6 @@ nav {
 
 #cv-button:hover {
   cursor: pointer;
-}
-
-.nav-header-wrapper {
-  z-index: 9999;
-  position: relative;
 }
 
 .message-shadow {
@@ -104,6 +102,15 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
+.icon {
+  font-size: 40px;
+}
+
+.linkedin-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .menu a {
   color: #ffffff;
   text-decoration: none;
@@ -116,7 +123,17 @@ nav a:hover {
 
 @media screen and (max-width: 768px) {
   nav {
+    top: 0;
     justify-content: space-between;
+  }
+
+  .li-size {
+    font-size: 25px;
+  }
+
+  .linkedin-icon {
+    width: 25px;
+    height: 25px;
   }
 
   .hamburger-menu {
@@ -138,7 +155,6 @@ nav a:hover {
     font-size: 1rem;
     margin-bottom: 0.8rem;
   }
-  
 
   .menu ul {
     flex-direction: row;

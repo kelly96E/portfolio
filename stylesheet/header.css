@@ -33,7 +33,7 @@ header p {
 
 @media screen and (max-width: 768px) {
   .header-content {
-    top: 50%;  /* or any percentage or px value you find suitable */
+    top: 50%;  
   }
 }
 

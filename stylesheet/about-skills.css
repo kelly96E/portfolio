@@ -11,7 +11,6 @@ body {
 }
 
 
-
 #about-skills {
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +21,7 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   width: 80%;
-  height: 60vh; /* adjust this to fit your content */
+  height: 60vh; 
   margin: 0 auto;
 }
 
@@ -45,7 +44,7 @@ body {
 @media screen and (max-width: 768px) {
   #about-skills {
     width: 100%;
-    height: auto; /* let it adjust based on the content */
+    height: auto; 
     padding: 1rem;
   }
 
@@ -59,11 +58,11 @@ body {
   }
 
   .main-content {
-    margin-top: 10rem; /* adjust as necessary */
+    margin-top: 1rem; 
   }
 
   footer {
-    position: static; /* to push the footer to the bottom when the content above it is stacked vertically */
+    position: absolute;
   }
 }
 
