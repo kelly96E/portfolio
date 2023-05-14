@@ -20,18 +20,31 @@ function showCvMessage() {
   setTimeout(() => {
     formMessage.style.display = "none";
   }, 15000);
+
+  const currentURL = window.location.href;
+
+  if (currentURL.endsWith("https://kelly96e.github.io/portfolio/") || currentURL.endsWith("/")) {
+    window.location.href = "#contact";
+  } else {
+    window.location.href = "../index.html#contact";
+  }
 }
 
-document
-  .getElementById("cv-button")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
+document.getElementById("cv-button").addEventListener("click", function (event) {
+  event.preventDefault();
+  showCvMessage();
+});
 
-    let currentURL = window.location.href;
+// document
+//   .getElementById("cv-button")
+//   .addEventListener("click", function (event) {
+//     event.preventDefault();
 
-    if (currentURL.endsWith("https://kelly96e.github.io/portfolio/") || currentURL.endsWith("/")) {
-      window.location.href = "#contact";
-    } else {
-      window.location.href = "../index.html#contact";
-    }
-  });
+//     const currentURL = window.location.href;
+
+//     if (currentURL.endsWith("https://kelly96e.github.io/portfolio/") || currentURL.endsWith("/")) {
+//       window.location.href = "#contact";
+//     } else {
+//       window.location.href = "../index.html#contact";
+//     }
+//   });
