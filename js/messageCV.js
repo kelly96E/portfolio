@@ -27,7 +27,9 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const path = window.location.pathname;
-    const href = path.endsWith('index.html') || path === '/' ? '#contact' : 'index.html#contact';
+    const href =
+      path.endsWith("index.html") || path === "/"
+        ? "#contact"
+        : "../index.html#contact";
     window.location.href = href;
   });
-
