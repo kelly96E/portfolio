@@ -28,8 +28,8 @@ document
     event.preventDefault();
     const path = window.location.pathname;
     const href =
-      path.endsWith("index.html") || path === "/"
+      path.endsWith("index.html") || path === "/portfolio/"
         ? "#contact"
-        : "../index.html#contact";
+        : "/portfolio/index.html#contact";
     window.location.href = href;
   });
