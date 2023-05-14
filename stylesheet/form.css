@@ -11,8 +11,8 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%; 
-  max-width: 1000px; 
+  width: 100%;
+  max-width: 1000px;
 }
 
 form label {
@@ -22,9 +22,10 @@ form label {
   font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   display: block;
-  width: 100%; 
+  width: 100%;
   text-align: start;
   padding: 1rem;
   border: 2px solid #a2a5a2;
@@ -64,9 +65,8 @@ form button:hover {
 
 @media screen and (max-width: 768px) {
   form {
-    max-width: none; 
+    max-width: none;
   }
-
 
   #contact {
     margin-top: 150px; /* Adjust this value to your needs */
