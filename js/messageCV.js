@@ -36,9 +36,14 @@ window.onload = function () {
   }
 };
 
-document
-  .getElementById("cv-button")
-  .addEventListener("click", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
+  const cvButton = document.getElementById("cv-button");
+  if (!cvButton) {
+    console.log("CV button not found");
+    return;
+  }
+
+  cvButton.addEventListener("click", function (event) {
     event.preventDefault();
     const path = window.location.pathname;
     const href =
@@ -57,3 +62,4 @@ document
       window.location.reload();
     }
   });
+});
