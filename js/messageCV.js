@@ -42,4 +42,7 @@ document
     console.log("CV button clicked, navigating to", href); // Log when the CV button is clicked
 
     window.location.href = href;
+
+    // Add a slight delay before calling showCvMessage() to ensure the page has loaded
+    setTimeout(showCvMessage, 100); // Call the function directly here
   });
