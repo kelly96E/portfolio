@@ -13,7 +13,7 @@ header {
   color: #fff;
 }
 
-.fat{
+.fat {
   font-size: 1.5rem;
 }
 
@@ -33,7 +33,7 @@ header p {
 
 @media screen and (max-width: 768px) {
   .header-content {
-    top: 50%;  
+    top: 50%;
   }
 
   header h1 {
@@ -44,10 +44,7 @@ header p {
     font-size: 1rem;
   }
 
-  .fat{
+  .fat {
     font-size: 1rem;
   }
 }
-
-
-

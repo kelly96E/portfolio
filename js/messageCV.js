@@ -5,7 +5,7 @@ function showCvMessage() {
     "Interested in my CV? Don't hesitate to send a message and introduce yourself!";
   formMessage.style.display = "block";
   formMessage.style.border = "2px solid #4db6ac";
-  formMessage.style.backgroundColor = "transparent";
+  formMessage.style.backgroundColor = "rgba(85, 85, 85, 0.74)";
   formMessage.style.padding = "20px";
   formMessage.style.marginTop = "20px";
   formMessage.style.borderRadius = "5px";
@@ -15,7 +15,6 @@ function showCvMessage() {
   formMessage.style.textAlign = "center";
   formMessage.classList.add("message-shadow");
 
-  // Scroll down to the formMessage smoothly
   formMessage.scrollIntoView({ behavior: "smooth" });
 
   setTimeout(() => {
@@ -23,4 +22,12 @@ function showCvMessage() {
   }, 15000);
 }
 
-document.getElementById("cv-button").addEventListener("click", showCvMessage);
+document
+  .getElementById("cv-button")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.href = "../index.html#contact";
+    if (window.location.hash === "#contact") {
+      showCvMessage();
+    }
+  });

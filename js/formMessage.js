@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
     formMessage.textContent = "Please fill in all fields.";
     formMessage.style.display = "block";
     formMessage.style.border = "2px solid #e57373";
-    formMessage.style.backgroundColor = "transparent";
+    formMessage.style.backgroundColor = "rgba(85, 85, 85, 0.74)";
     formMessage.style.padding = "20px";
     formMessage.style.marginTop = "20px";
     formMessage.style.borderRadius = "5px";
@@ -40,7 +40,7 @@ form.addEventListener("submit", (event) => {
       formMessage.textContent = "Email successfully sent!";
       formMessage.style.display = "block";
       formMessage.style.border = "2px solid #81c784";
-      formMessage.style.backgroundColor = "transparent";
+      formMessage.style.backgroundColor = "rgba(85, 85, 85, 0.74)";
       formMessage.style.padding = "20px";
       formMessage.style.marginTop = "20px";
       formMessage.style.borderRadius = "5px";
@@ -52,7 +52,7 @@ form.addEventListener("submit", (event) => {
       formMessage.textContent = "Oops! Something went wrong. Please try again.";
       formMessage.style.display = "block";
       formMessage.style.border = "2px solid #e57373";
-      formMessage.style.backgroundColor = "transparent";
+      formMessage.style.backgroundColor = "rgba(85, 85, 85, 0.74)";
       formMessage.style.padding = "20px";
       formMessage.style.marginTop = "20px";
       formMessage.style.borderRadius = "5px";
@@ -68,3 +68,9 @@ form.addEventListener("submit", (event) => {
 
   request.send(formData);
 });
+
+window.onload = function () {
+  if (window.location.hash === "#contact") {
+    showCvMessage();
+  }
+};

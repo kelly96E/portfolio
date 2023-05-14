@@ -20,18 +20,17 @@ main ul {
   list-style: none;
 }
 
-
 main li {
   margin: 0 1rem;
-  width: 300px; /* Add fixed width */
-  height: 200px; /* Add fixed height */
-  position: relative; /* Add this to properly position the h3 element */
+  width: 300px;
+  height: 200px;
+  position: relative;
 }
 
 main img {
-  width: 100%; /* Set width to 100% of the container */
-  height: 100%; /* Set height to 100% of the container */
-  object-fit: cover; /* Make the image cover the container without stretching */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   vertical-align: middle;
   transition: all 0.3s ease-in-out;
 }
