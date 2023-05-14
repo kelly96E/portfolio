@@ -26,8 +26,12 @@ document
   .getElementById("cv-button")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "../index.html#contact";
-    if (window.location.hash === "#contact") {
-      showCvMessage();
+
+    let currentURL = window.location.href;
+
+    if (currentURL.endsWith("index.html") || currentURL.endsWith("/")) {
+      window.location.href = "#contact";
+    } else {
+      window.location.href = "../index.html#contact";
     }
   });
