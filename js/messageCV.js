@@ -29,7 +29,7 @@ document
 
     let currentURL = window.location.href;
 
-    if (currentURL.endsWith("index.html") || currentURL.endsWith("/")) {
+    if (currentURL.endsWith("https://kelly96e.github.io/portfolio/") || currentURL.endsWith("/")) {
       window.location.href = "#contact";
     } else {
       window.location.href = "../index.html#contact";
