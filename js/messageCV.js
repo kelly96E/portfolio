@@ -30,6 +30,12 @@ window.onhashchange = function () {
   }
 };
 
+window.onload = function () {
+  if (window.location.hash === "#contact") {
+    showCvMessage();
+  }
+};
+
 document
   .getElementById("cv-button")
   .addEventListener("click", function (event) {
@@ -41,8 +47,13 @@ document
         : "/portfolio/index.html#contact";
     console.log("CV button clicked, navigating to", href); // Log when the CV button is clicked
 
-    window.location.href = href;
-
-    // Add a slight delay before calling showCvMessage() to ensure the page has loaded
-    setTimeout(showCvMessage, 100); // Call the function directly here
+    if (path === "/portfolio/") {
+      // If we're already on index.html, just set the hash
+      window.location.href = href;
+      setTimeout(showCvMessage, 100);
+    } else {
+      // If we're on a different page, navigate to index.html and force a reload
+      window.location.href = "/portfolio/index.html";
+      window.location.reload();
+    }
   });
