@@ -1,4 +1,6 @@
 function showCvMessage() {
+  console.log("showCvMessage called"); // Log when this function is called
+
   const formMessage = document.getElementById("form-message");
 
   formMessage.textContent =
@@ -37,5 +39,7 @@ document
       path.endsWith("index.html") || path === "/portfolio/"
         ? "#contact"
         : "/portfolio/index.html#contact";
+    console.log("CV button clicked, navigating to", href); // Log when the CV button is clicked
+
     window.location.href = href;
   });
