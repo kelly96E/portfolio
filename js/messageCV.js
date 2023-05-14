@@ -22,6 +22,12 @@ function showCvMessage() {
   }, 15000);
 }
 
+window.onhashchange = function () {
+  if (window.location.hash === "#contact") {
+    showCvMessage();
+  }
+};
+
 document
   .getElementById("cv-button")
   .addEventListener("click", function (event) {
