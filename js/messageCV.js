@@ -7,6 +7,10 @@ function showCvMessage() {
 
   const formMessage = document.getElementById("form-message");
 
+  if (!formMessage) {
+    return;
+  }
+
   formMessage.textContent =
     "Interested in my CV? Don't hesitate to send a message and introduce yourself!";
   formMessage.style.display = "block";
@@ -27,7 +31,7 @@ function showCvMessage() {
     formMessage.style.display = "none";
   }, 15000);
 
-  cvButtonClicked = false; 
+  cvButtonClicked = false;
 }
 
 window.onhashchange = function () {
@@ -58,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cvButtonClicked = true;
 
-    
     window.location.hash = "#cv";
     window.location.href = href;
   });
