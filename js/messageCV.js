@@ -1,6 +1,8 @@
-let cvButtonClicked = false;
-
 function showCvMessage() {
+  if (localStorage.getItem("cvButtonClicked") !== "true") {
+    return;
+  }
+
   if (!cvButtonClicked) {
     return;
   }
@@ -26,6 +28,8 @@ function showCvMessage() {
   formMessage.classList.add("message-shadow");
 
   formMessage.scrollIntoView({ behavior: "smooth" });
+
+  localStorage.removeItem("cvButtonClicked");
 
   setTimeout(() => {
     formMessage.style.display = "none";
@@ -61,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
         : "/portfolio/index.html#contact";
 
     cvButtonClicked = true;
+    localStorage.setItem('cvButtonClicked', 'true');
+
 
     window.location.hash = "#cv";
     window.location.href = href;
