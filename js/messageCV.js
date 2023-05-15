@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  cvButton.addEventListener("click", function (event) {
-    event.preventDefault();
+  document.querySelector("#cv-button").addEventListener("click", function (e) {
+    e.preventDefault();
     const path = window.location.pathname;
     const href =
       path.endsWith("index.html") || path === "/portfolio/"
@@ -52,14 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         : "/portfolio/index.html#contact";
     console.log("CV button clicked, navigating to", href); // Log when the CV button is clicked
 
-    if (path === "/portfolio/") {
-      // If we're already on index.html, just set the hash
-      window.location.href = href;
-      setTimeout(showCvMessage, 100);
-    } else {
-      // If we're on a different page, navigate to index.html and force a reload
-      window.location.href = "/portfolio/index.html";
-      window.location.reload();
-    }
+    // Always navigate to the new URL
+    window.location.href = href;
   });
 });
