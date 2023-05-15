@@ -1,5 +1,7 @@
 function showCvMessage() {
-  console.log("showCvMessage called"); // Log when this function is called
+  if (!cvButtonClicked) {
+    return;
+  }
 
   const formMessage = document.getElementById("form-message");
 
@@ -39,7 +41,6 @@ window.onload = function () {
 document.addEventListener("DOMContentLoaded", function () {
   const cvButton = document.getElementById("cv-button");
   if (!cvButton) {
-    console.log("CV button not found");
     return;
   }
 
@@ -50,9 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
       path.endsWith("index.html") || path === "/portfolio/"
         ? "#contact"
         : "/portfolio/index.html#contact";
-    console.log("CV button clicked, navigating to", href); // Log when the CV button is clicked
 
-    // Always navigate to the new URL
+        cvButtonClicked = true;
+
     window.location.href = href;
   });
 });
