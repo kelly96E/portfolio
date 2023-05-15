@@ -3,10 +3,6 @@ function showCvMessage() {
     return;
   }
 
-  if (!cvButtonClicked) {
-    return;
-  }
-
   const formMessage = document.getElementById("form-message");
 
   if (!formMessage) {
@@ -34,8 +30,6 @@ function showCvMessage() {
   setTimeout(() => {
     formMessage.style.display = "none";
   }, 15000);
-
-  cvButtonClicked = false;
 }
 
 window.onhashchange = function () {
@@ -64,9 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "#contact"
         : "/portfolio/index.html#contact";
 
-    cvButtonClicked = true;
-    localStorage.setItem('cvButtonClicked', 'true');
-
+    localStorage.setItem("cvButtonClicked", "true");
 
     window.location.hash = "#cv";
     window.location.href = href;
