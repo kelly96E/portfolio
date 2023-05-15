@@ -26,6 +26,8 @@ function showCvMessage() {
   setTimeout(() => {
     formMessage.style.display = "none";
   }, 15000);
+
+  cvButtonClicked = false; 
 }
 
 window.onhashchange = function () {
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  document.querySelector("#cv-button").addEventListener("click", function (e) {
+  cvButton.addEventListener("click", function (e) {
     e.preventDefault();
     const path = window.location.pathname;
     const href =
@@ -56,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cvButtonClicked = true;
 
+    
+    window.location.hash = "#cv";
     window.location.href = href;
   });
 });
