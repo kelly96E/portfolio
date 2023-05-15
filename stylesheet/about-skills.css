@@ -2,13 +2,14 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start; /* Align items to the start */
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* The body should at least fill the viewport */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 
 #about-skills {
@@ -98,11 +99,18 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative; /* change from absolute to relative */
+  margin-top: auto; /* This will push the footer down */
   bottom: 0;
   left: 0;
   background-color: transparent;
   color: #fff;
   text-align: center;
   padding: 10px 10px;
+  width: 100%; /* Ensure the footer takes up the full width */
 }
+
+.main-content {
+  flex-grow: 1; /* Allow this element to take up remaining space if available */
+}
+
