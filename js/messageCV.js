@@ -1,3 +1,5 @@
+let cvButtonClicked = false;
+
 function showCvMessage() {
   if (!cvButtonClicked) {
     return;
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ? "#contact"
         : "/portfolio/index.html#contact";
 
-        cvButtonClicked = true;
+    cvButtonClicked = true;
 
     window.location.href = href;
   });
